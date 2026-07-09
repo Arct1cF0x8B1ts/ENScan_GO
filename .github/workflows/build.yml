@@ -1,8 +1,10 @@
 name: build
 
 on:
+  push:
+    branches: [ master, dev ]  # 添加 push 触发
   pull_request:
-    branches: [ master,dev ]
+    branches: [ master, dev ]
 
 jobs:
   build:
