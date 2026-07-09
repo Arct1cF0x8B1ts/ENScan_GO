@@ -29,7 +29,7 @@ func Flag(Info *ENOptions) {
 	flag.StringVar(&Info.KeyWord, "n", "", "关键词 eg 小米")
 	flag.StringVar(&Info.CompanyID, "i", "", "公司PID")
 	flag.StringVar(&Info.InputFile, "f", "", "批量查询，文本按行分隔")
-	flag.StringVar(&Info.ScanType, "type", "aqc", "查询渠道，可多选")
+	flag.StringVar(&Info.ScanType, "type", "", "查询渠道，可多选")
 	//查询参数指定
 	flag.Float64Var(&Info.InvestNum, "invest", 0, "投资比例 eg 100")
 	flag.StringVar(&Info.GetFlags, "field", "", "获取字段信息 eg icp")
