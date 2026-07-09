@@ -27,7 +27,7 @@ jobs:
           docker pull techknowlogick/xgo:latest
           go install src.techknowlogick.com/xgo@latest
           sudo apt install upx
-
+    
       - name: Build
         run: |
           ls -a
